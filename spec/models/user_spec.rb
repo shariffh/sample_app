@@ -64,4 +64,8 @@ describe "when email is not present" do
   end
   it { should_not be_valid }
 end
+describe "when password doesn't match confirmation" do
+  before { @user.password_confirmation = "mismatch" }
+  it { should_not be_valid }
+end
 end
