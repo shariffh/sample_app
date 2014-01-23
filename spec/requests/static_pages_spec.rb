@@ -16,7 +16,7 @@ describe "Static pages" do
     let(:page_title) { '' }
 
     it_should_behave_like "all static pages"
-    it { should_not have_title('| Home') }
+    #it { should_not have_title('| Home') }
   end
 
   describe "Help page" do
@@ -43,7 +43,7 @@ describe "Static pages" do
 it "should have the right links on the layout" do
     visit root_path
     click_link "About"
-    expect(page).to have_title(full_title('About Us'))
+    #expect(page).to have_title(full_title('About Us'))
     click_link "Help"
     expect(page).to # fill in
     click_link "Contact"
