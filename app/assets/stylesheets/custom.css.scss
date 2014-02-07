@@ -33,7 +33,7 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
-}
+}  
 
 /* typography */
 
@@ -62,24 +62,23 @@ p {
   line-height: 1.7em;
 }
 
-
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
-}
+}  
 
 /* footer */
 
@@ -93,19 +92,21 @@ footer {
     &:hover {
       color: $grayDarker;
     }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
 }
+small {
+  float: left;
+}
+ul {
+  float: right;
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 10px;
+  }
+ }
+}  
+
+
 /* miscellaneous */
 
 .debug_dump {
@@ -140,6 +141,12 @@ aside {
     }
   }
 }
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
 .stats {
   overflow: auto;
   a {
@@ -169,11 +176,6 @@ aside {
   }
 }
 
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -198,6 +200,21 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
 }
 
 /* microposts */

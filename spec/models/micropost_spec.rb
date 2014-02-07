@@ -1,12 +1,9 @@
 require 'spec_helper'
 
 describe Micropost do
-	before { @micropost = user.microposts.build(content: "Lorem ipsum") }
+
   let(:user) { FactoryGirl.create(:user) }
-  before do
-    # This code is not idiomatically correct.
-    @micropost = Micropost.new(content: "Lorem ipsum", user_id: user.id)
-  end
+  before { @micropost = user.microposts.build(content: "Lorem ipsum") }
 
   subject { @micropost }
 
@@ -14,6 +11,7 @@ describe Micropost do
   it { should respond_to(:user_id) }
   it { should respond_to(:user) }
   its(:user) { should eq user }
+
 
   it { should be_valid }
 

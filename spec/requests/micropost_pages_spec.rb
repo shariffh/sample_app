@@ -2,15 +2,15 @@ require 'spec_helper'
 
 describe "Micropost pages" do
 
-  subject { page }
+ subject { page }
 
-  let(:user) { FactoryGirl.create(:user) }
-  before { sign_in user }
+ let(:user) { FactoryGirl.create(:user) }
+ before { sign_in user }
 
   describe "micropost creation" do
     before { visit root_path }
-
-    describe "with invalid information" do
+    
+     describe "with invalid information" do
 
       it "should not create a micropost" do
         expect { click_button "Post" }.not_to change(Micropost, :count)
@@ -30,6 +30,7 @@ describe "Micropost pages" do
       end
     end
   end
+
   describe "micropost destruction" do
     before { FactoryGirl.create(:micropost, user: user) }
 

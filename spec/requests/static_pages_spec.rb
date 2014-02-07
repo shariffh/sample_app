@@ -11,7 +11,7 @@ shared_examples_for "all static pages" do
 
   describe "Home page" do
     before { visit root_path }
-    let(:heading) { 'Sample App' }
+    let(:heading)    { 'Sample App' }
     let(:page_title) { '' }
 
     it_should_behave_like "all static pages"
