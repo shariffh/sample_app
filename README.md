@@ -2,6 +2,6 @@
 
 This is the sample application for
 the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
-by [Vivian Msafiri](vivianmbaji@gmail.com).
+by [Shariff Hussein](shahuma2010@gmail.com).
 
-My Heroku Link to sample_app: http://tranquil-coast-7345.herokuapp.com/ 
+My Heroku Link to sample_app
